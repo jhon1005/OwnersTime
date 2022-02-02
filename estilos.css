@@ -1,0 +1,241 @@
+*{
+    padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+header{
+	width: 2000px;
+	height: 90px;
+    background-color: rgba(4, 36, 61, 0.507);
+	
+}
+.cab_nav{
+	width: 100%;
+	padding: 20px;
+	text-align: right;
+	position: fixed;
+	top: 0px;
+}
+.cab_nav ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 10px 50px;
+	color: white;
+	font-size: 20px;
+	font-family: sans-serif;
+	cursor: pointer;
+}
+.cab_nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+.nomb_logo{
+	width: 280px;
+	padding: 0px 20px;
+	float: left;
+	position: relative;
+	top: 5%;
+	left: 2%;
+	color: #fff;
+	font-size: 30px;
+}
+.logo_img{
+	width: 80px;
+	position: absolute;
+	top: -4px;
+	left: 20px;
+}
+.contenedor{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%)translateY(-50%);
+	padding: 25px 10px;
+	border: solid;
+	background-color: rgba(4, 36, 61, 0.507);
+}
+.titulo_cont{
+	font-size: 40px;
+	text-align: center;
+	padding: 20px 10px;
+	color: white;
+}
+.parrafo_cont{
+	font-size: 20px;
+	text-align: justify;
+	color: white;
+
+}
+
+.video1{
+min-width: 100%;
+transform: translateX(50px)translateY(50px);
+z-index: -1;
+top: 1000%;
+position: relative;
+width: 100px;
+height: 100px;
+left: 50%;
+}
+
+
+.footer{
+	background-color: rgba(0, 0, 0, 0.6);
+	bottom: 50%;
+	width: 100%;
+	padding: 20px 0px;
+	position:relative;
+	margin-top: 40PX;
+
+}
+.foot_2{
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-top:40%;
+	width: 100%;
+	padding: 20px 0px;
+	position:absolute;
+}
+
+.foot_p{
+	color: white;
+	text-align: center;
+}
+.marca{
+	background-color: rgba(184, 52, 0, 0.514);
+}
+
+.imagen_fondo{
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.formulario_ing{
+	width: 400px;
+	max-width: 80%;
+	margin: auto;
+	margin-top: 50px;
+	padding: 50px;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.712);
+	background: rgba(223, 223, 223, 0);
+	
+}
+.formulario_ing p {
+	color: white;
+	text-align:center ;
+	margin-top: 20px;
+	padding: 0;
+
+}
+.formulario_ing a{
+	color: #61bee4;
+}
+
+.info_h2{
+	text-align: center;
+	margin-top: 0;
+	color:white;
+	font-family: sans-serif;
+}
+.formula, .enviar{
+	display: block;
+	padding: 20px;
+	width: 100%;
+	margin:30px 0px;
+	font-size: 20px;
+	border: none;
+}
+.enviar{
+    background: -webkit-gradient(linear, 80% 20%, 10% 21%, from(#61bee4), to(#ff8afd));
+    border: 0;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-bottom: 0;
+    opacity: 0.7;
+    transition: .8s ease-out;
+    color: #000;
+}
+
+.enviar:hover{
+	opacity: 3;
+	border-radius: 0;
+	background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#ff8afd), to(#61bee4) )
+}
+#bar, .icon-menu{
+	display: none;
+}
+
+@media screen and (max-width: 1000px){
+	#bar {
+		width: 100px;
+		height: 70px;
+		position: fixed;
+		top: 0;
+		background: white;
+		z-index: 10000;
+		display: none;
+	}
+
+	.icon-menu{
+		display: block;
+		color: rgb(255, 255, 255);
+		font-size:40px;
+		left: 30px;
+		margin-top: 18px;
+		position: absolute;
+		z-index: 1000000;
+	}
+	header{
+		height: 70px;
+		position: fixed;
+		width: 100%;
+		background-color:  rgb(0, 0, 0);
+		top: o;
+		z-index: 10;
+	}
+	.cab_nav{
+		width: 70%;
+		height: 100%;
+		position: fixed;
+		margin: 0;
+		transform: translateX(-100%);
+		background-color: rgba(21, 19, 17, 1);
+		transition: all 0.7s ease-in;
+	}
+	.logo_img{ 
+		display: none;
+		
+	}
+	.nomb_logo{
+		display: none;
+	}
+	.tituloo{
+		color: white;
+		text-decoration: none;
+		padding: 0px 5%;
+		position: fixed;
+	}
+	header .cab_nav ul li{
+		display: block;
+		border-bottom: 1px solid rgba(225, 225, 225, 0.9);
+		padding: 10px 0px;
+		width: 300px;
+		text-align: center;
+		margin-top: 20%;
+
+
+	}
+	
+
+	#bar:checked~ .cab_nav{
+		transform: translateX(-0%);
+		transition: all 0.6s ease-out;
+		background-color: rgba(29, 25, 29, 0.7);
+	}
+
+}

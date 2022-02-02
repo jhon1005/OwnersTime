@@ -1,0 +1,234 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	width: 2000px;
+	height: 90px;
+    background-color: rgba(4, 36, 61, 0.507);
+}
+.cab_nav{
+	width: 100%;
+	padding: 20px;
+	text-align: right;
+	position: fixed;
+	top: 0px;
+}
+.cab_nav ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 10px 50px;
+	color: white;
+	font-size: 20px;
+	font-family: sans-serif;
+	cursor: pointer;
+}
+.cab_nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+.nomb_logo{
+	width: 280px;
+	padding: 0px 20px;
+	float: left;
+	position: relative;
+	top: 5%;
+	left: 2%;
+	color: #fff;
+	font-size: 30px;
+}
+
+.logo_img{
+	width: 80px;
+	position: absolute;
+	
+	top: -4px;
+	left: 20px;
+
+}
+
+.video{
+	position: fixed;
+	min-width: 100%;
+	min-width: 100%;
+	top: 1000%;
+	left: 50%;
+	transform: translateY(-50%)translateX(-50%);
+	z-index: -1;
+}
+.footer{
+	background-color: rgba(0, 0, 0, 0.6);
+	bottom: 0px;
+	width: 100%;
+	padding: 20px 50px;
+	position:relative; 
+    margin-top: 30px;
+}
+
+.foot_p{
+	color: white;
+	text-align: center;
+}
+.marca{
+	background-color: rgba(184, 52, 0, 0.514);
+}
+
+.imagen_fondo{
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.form_register{
+	width: 450px;
+	padding: 30px;
+	margin: auto;
+	margin-top: 80px;
+	border-radius: 4px;
+	font-family: 'calibri';
+	color: white;
+	box-shadow: 7px 13px 37px #000;
+
+}
+
+
+.form_register h4{
+	font-size: 22px;
+	margin-bottom: 20px;
+} 
+
+.controls{
+	width: 100%;
+	background: #24303c;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid rgb(224, 182, 243);
+	font-size: 18px;
+	color: whitesmoke;
+
+
+}
+
+
+
+.form_register p{
+	height: 60px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+   
+}
+
+
+
+.form_register a{
+	color: white;
+	text-decoration: none;
+
+}
+
+.form_register a:hover{
+	color: white;
+	text-decoration: underline;
+
+}
+
+.form_register .botons{
+	width: 100%;
+	background: -webkit-gradient(linear, 80% 20%, 10% 21%, from(#61bee4), to(#ff8afd));
+	border: none;
+	padding: 12px;
+	color: white;
+	margin: 16px 0;
+	font-size: 16px;
+
+}
+
+
+.form_register .botons:hover{
+	opacity: 3;
+	border-radius: 0;
+	background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#ff8afd), to(#61bee4) )
+}
+
+#bar, .icon-menu{
+	display: none;
+}
+
+
+
+@media screen and (max-width: 1000px){
+	#bar {
+		width: 100px;
+		height: 70px;
+		position: fixed;
+		top: 0;
+		background: white;
+		z-index: 10000;
+		display: none;
+	}
+
+	.icon-menu{
+		display: block;
+		color: rgb(255, 255, 255);
+		font-size:40px;
+		left: 30px;
+		margin-top: 18px;
+		position: absolute;
+		z-index: 1000000;
+	}
+	header{
+		height: 70px;
+		position:relative;
+		width: 100%;
+		background-color:  rgb(0, 0, 0);
+		top: o;
+		z-index: 10;
+	}
+	.cab_nav{
+		width: 70%;
+		height: 100%;
+		position: fixed;
+		margin: 0;
+		transform: translateX(-100%);
+		background-color: rgba(21, 19, 17, 1);
+		transition: all 0.7s ease-in;
+	}
+	.logo_img{ 
+		display: none;
+		
+	}
+	.nomb_logo{
+		display: none;
+	}
+	.tituloo{
+		color: white;
+		text-decoration: none;
+		padding: 0px 5%;
+		position:fixed;
+	}
+	header .cab_nav ul li{
+		display: block;
+		border-bottom: 1px solid rgba(225, 225, 225, 0.9);
+		padding: 10px 0px;
+		width: 300px;
+		text-align: center;
+		margin-top: 20%;
+
+
+	}
+	
+
+	#bar:checked~ .cab_nav{
+		transform: translateX(-0%);
+		transition: all 0.6s ease-out;
+		background-color: rgba(29, 25, 29, 0.7);
+	}
+
+}
